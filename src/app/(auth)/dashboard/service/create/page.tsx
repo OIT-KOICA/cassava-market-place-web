@@ -160,6 +160,7 @@ export default function ServiceDashboardCreatePage() {
         title: "Message",
         description: "Traitement effectué avec succès !",
       });
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
       toast({
         variant: "destructive",
