@@ -28,7 +28,6 @@ import { ProductFormValues, productSchema } from "@/schemas/product-schema";
 import { ProductDTO } from "@/type";
 import useProductStore from "@/domain/store/product-store";
 import {
-  useCreateProduct,
   useGetProduct,
   useUpdateProduct,
 } from "@/domain/query/product-query";
@@ -55,7 +54,7 @@ export default function ServiceDashboardEditPage({
   const [customUnit, setCustomUnit] = useState(false);
   const [service, setService] = useState<ProductDTO | null>(null);
 
-  const { product, error } = useGetProduct(params.slug);
+  const { product } = useGetProduct(params.slug);
 
   const { toast } = useToast();
 
@@ -174,6 +173,7 @@ export default function ServiceDashboardEditPage({
         title: "Message",
         description: "Traitement effectué avec succès !",
       });
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
       toast({
         variant: "destructive",

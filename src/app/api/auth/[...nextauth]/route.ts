@@ -49,6 +49,7 @@ export const authOptions: NextAuthOptions = {
 };
 
 // Fonction de rafraîchissement du token
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 async function refreshAccessToken(token: any) {
   try {
     const url = `${process.env.KEYCLOAK_ISSUER!}/protocol/openid-connect/token`;

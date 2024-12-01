@@ -1,4 +1,3 @@
-import { Leaf, Sprout, Sun } from "lucide-react";
 import { lazy } from "react";
 
 const Hero = lazy(() => import("@/components/homepage/hero"));

@@ -55,10 +55,9 @@ export type Message = {
 };
 
 export type Discussion = {
-  user: any;
   id: string;
   product: string;
-  temporaryUser: {
+  user: {
     id: string;
     name: string;
     phone: string;

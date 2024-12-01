@@ -6,7 +6,6 @@ import {
   getCompany,
   getUnits,
 } from "../service/configuration-api";
-import { createProduct } from "../service/product-api";
 
 /**
  * Hook pour récupérer toutes les villes.

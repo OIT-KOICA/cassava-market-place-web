@@ -24,6 +24,7 @@ import { z } from "zod";
 import { format } from "date-fns";
 
 export default function DashboardDisccusionPage({
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   params,
 }: {
   params: { id: string };

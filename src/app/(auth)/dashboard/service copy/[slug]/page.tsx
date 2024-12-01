@@ -77,7 +77,7 @@ export default function ServiceDashboardViewPage({
               <BreadcrumbSeparator className="hidden md:block" />
               <BreadcrumbSeparator className="hidden md:block" />
               <BreadcrumbItem className="hidden md:block">
-                <BreadcrumbLink href="/dashboard/service">
+                <BreadcrumbLink href="/dashboard/product">
                   Produits
                 </BreadcrumbLink>
               </BreadcrumbItem>
@@ -197,7 +197,7 @@ export default function ServiceDashboardViewPage({
                             onClick={() => {
                               setActiveDiscussion(discussion);
                               router.push(
-                                `/dashboard/service/discussion/${discussion.id}`
+                                `/dashboard/product/discussion/${discussion.id}`
                               );
                             }}
                           >

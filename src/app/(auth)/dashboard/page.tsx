@@ -1,8 +1,5 @@
 "use client";
 
-const SidebarSkeleton = lazy(
-  () => import("@/components/dashboard/sidebar-skeleton")
-);
 const CreateCompanyDialog = lazy(
   () => import("@/components/dashboard/create-company-dialog")
 );

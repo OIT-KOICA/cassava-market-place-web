@@ -13,6 +13,7 @@ const QueryProviderWrapper = ({ children }: { children: React.ReactNode }) => {
         defaultOptions: {
           queries: {
             retry: false, // Ne pas réessayer automatiquement les requêtes
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             onError: (error: any) => {
               if (error?.response?.status === 401 && pathname != "/") {
                 console.log("Token expiré, redirection en cours...");
